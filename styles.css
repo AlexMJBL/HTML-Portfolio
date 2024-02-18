@@ -1,0 +1,162 @@
+:root{
+  --coral:#e53170;
+  --orange:#ff8906;
+  --white: #fffffe;
+  --black:#0f0e17;
+  --gray:#2e2f3e;
+  --lightgray:#a7a9be;
+}
+*{
+margin:0;
+padding:0;
+}
+.html {
+  font-size: 15px;
+}
+body{
+  width:100%;
+}
+header{
+  background-color:var(--orange);
+  width: 100%;
+  height:70px;
+  position:fixed;
+  display:flex;
+  top:0;
+  
+ 
+}
+nav{
+  font-size: 200%;
+  display:flex;
+  position:fixed;
+  top:15px;
+  right:30PX;
+  gap:30px;
+  }
+a{
+  text-decoration: none;
+  color:var(--gray);
+}
+a:visited{
+  color:var(--black); 
+}
+.welcome-section{
+  height:100vh;
+  background-color: var(--black);
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+}
+h1{
+  color:var(--white);
+  font-size: 400%;
+  margin-bottom:-20px;
+}
+.welcome-section p {
+  color:var(--orange);
+  font-size: 300%;
+  margin-top: 25px;  
+}
+.projects{
+  background-color:var(--lightgray);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.spacer1{
+  height:80px;
+  background-color:var(--lightgray);
+  }
+
+  .project_text{
+
+    background-color:var(--lightgray);
+    width:100%;
+  }
+  .pmain{
+
+    text-decoration:underline;
+    font-size:250%;   
+  }
+  .spacer2{
+  height:50px;
+  background-color:var(--lightgray);
+  }
+  
+  
+.project-grid {
+  
+  background-color:var(--lightgray);
+  display:grid;
+  grid-template-columns:380px 380px 380px;
+  gap: 40px;
+  justify-content: center;
+}
+.project-grid a{
+background:var(--black);
+height: 440px;
+width:380px;
+display:flex;
+flex-direction:column;
+gap:10px;
+color: var(--lightgray);
+}
+img{
+  height:380px;
+  width:380px;
+}
+p{
+  text-align:center;
+  font-size:180%;
+}
+.contact_page{
+  height:900px;
+  background-color:var(--black);
+  color:var(--white);
+  display:flex;
+  flex-direction:column;
+}
+.spacer3{
+  height: 320px;
+}
+.contact_link{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+list-style:none;
+
+}
+.contact_text{
+  height:130px;
+}
+
+.pcontact{
+  padding-top:10px;
+  font-size:150%;
+}
+.contact_link a{
+font-size: 180%;
+color: var(--lightgray);
+}
+.contact_link a:visited{
+color: var(--lightgray);
+}
+.spacer4{
+  background-color:var(--orange);
+  height:4px;
+}
+@media (max-width: 1250px){
+.project-grid {
+  grid-template-columns: 380px 380px;
+}
+}
+@media (max-width: 850px){
+.project-grid {
+  grid-template-columns: 380px;
+}
+.contact_link{
+ flex-wrap: wrap;
+}
+}
